@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.header{
+    background-color: rgb(51, 68, 136);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+#nav_desktop{
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+#nav_desktop .logo{
+    font-size: 30px;
+    padding-left: 20px;
+}
+#nav_desktop .navlinks{
+    display: flex;
+    gap: 25px;
+    padding: 5px;
+    text-align: center;
+}
+#nav_desktop .navlinks li:last-child{
+    padding-right: 25px;
+}
+#nav_desktop .navlinks li{
+    list-style: none;
+    font-size: 25px;
+    
+}
+#nav_desktop .navlinks li a{
+    text-decoration: none;
+    transition: color 0.5s 0s linear;
+    /* transition: text-decoration 2s 0.5s linear; */
+}
+#nav_desktop .navlinks li a:any-link{
+    color: #000;
+}
+#nav_desktop .navlinks li a:hover{
+    /* text-decoration: line-through; */
+    color: rgb(229, 3, 78);
+    /* text-decoration: wavy; */
+}
+#nav_mobile{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+#nav_mobile .logo{
+    margin-top: 6px;
+    font-size: 25px;
+    margin-left: 20px;
+}
+#nav_mobile .fa-bars{
+    font-size: 30px;
+    padding-right: 20px;
+    margin-top: 4px;
+}
+#nav_mobile .navblock{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 150px;
+    height: 100dvh;
+    background-color: rgb(33, 26, 66);
+    /* display: flex; */
+    gap: 50px;
+    /* align-items: center; */
+    /* justify-content: space-between; */
+    /* flex-direction: row; */
+    padding: 10px;
+    transition: all 0s 0s linear;
+}
+
+#nav_mobile .fa-xmark{
+    font-size: 25px;
+    margin-bottom: 60px;
+    padding: 10px;
+    color: #e22b2b;
+}
+
+#nav_mobile .navlinks{
+    padding: 10px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+#nav_mobile .navlinks a{
+    font-size: 20px;
+    text-decoration: none;
+    z-index: 1;
+}
+
+#nav_mobile .navlinks a:any-link{
+    color: #e22b2b;
+}
